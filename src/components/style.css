@@ -1,0 +1,46 @@
+.hcard_img img{
+    height: 100px;
+    width: 100px;
+}
+.hcard_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+}
+.linka{
+    color:  #626567 ;
+}
+.btn-group button{
+    padding: 10px;
+    width: 200px;
+    border: none;
+    margin-right: 2px;
+}
+.pokedetail{
+    margin-bottom: 20%;
+}
+.pokedetail .left{
+    background-color:  #dc7633;
+    border-radius: 5px;
+    display: inline;
+    float: left;
+    width: 600px;
+    height: 700px;
+}
+.pokedetail .right{
+    border: 1px solid green;
+    display: inline;
+    float: right;
+}
+.pokedetail{
+    margin-top: 10%;
+}
+.infomage{
+    margin-top: 22%;
+}
+.card_img img{
+    height: 450px;
+    width: 450px;
+}
