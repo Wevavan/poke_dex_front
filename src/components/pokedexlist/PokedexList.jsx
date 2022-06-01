@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PokedexCard from './PokedexCard';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const PokedexList = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -21,7 +22,7 @@ const ShowPokemons = () =>{
           <PokedexCard id={pokemon._id} key={pokemon._id} pokemon={pokemon} image={pokemon.image} nom={pokemon.nom} numero={pokemon.numero}/>
         )
       })}
-      <button type="button" class="btn btn-secondary btn-sm bsize1 col-sm-2">Ajouter Pokemon</button>
+      <Link to='/ajouterpoke'><button type="button" class="btn btn-secondary btn-sm bsize1 col-sm-2">Ajouter Pokemon</button></Link>
     </>
   )
 }

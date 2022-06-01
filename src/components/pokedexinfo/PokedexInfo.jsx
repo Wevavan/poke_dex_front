@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import '../style.css';
 
 const PokedexInfo = ({}) => {
@@ -16,6 +16,17 @@ const PokedexInfo = ({}) => {
         }
         getPokemon();
     }, [id]);
+
+    const HandleSupPoke = ()=>{
+        fetch(`/api/pokemons/${id}`,
+        {
+            method: 'DELETE',
+            headers: { 'Content-Type': 'application/json'},
+        }
+        ).then( () => {
+            console.log('Pokemon supprimé avec succes.');
+        })
+    }
 
   return (
     <div className='pokedetail container d-flex justify-content-center align-items-center'>
@@ -63,6 +74,9 @@ const PokedexInfo = ({}) => {
                         </tr>
                     </tbody>
                 </table>
+
+                <Link to={`/modifierpoke/${id}`}><button type="button" class="btn btn-secondary btn-sm bsize1 col-sm-5 me-1">Modifier</button></Link>
+                <Link to='/'><button type="button" class="btn btn-danger btn-sm bsize1 col-sm-6" onClick={()=>HandleSupPoke()}>Supprimer</button></Link>
             </div>
         </div>
     </div>

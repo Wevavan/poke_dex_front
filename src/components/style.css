@@ -59,6 +59,28 @@
 .container button:focus{
     box-shadow: none;
 }
-.container input:focus{
+.formcard input:focus{
     box-shadow: none;
+}
+.formcard button:focus{
+    box-shadow: none;
+}
+
+.formcard{
+    color: #fff;
+    background-color: #dc7633;
+    width: 400px;
+    margin-top: 5%;
+    margin-left: 38%;
+    margin-bottom:5% ;
+    border-radius: 5px;
+}
+.formcard form{
+    padding: 10%;
+}
+.formcard form input{
+    width: 310px;
+}
+.formcard form label{
+    width: 210px;
 }
