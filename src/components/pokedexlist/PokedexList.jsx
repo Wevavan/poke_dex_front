@@ -21,6 +21,7 @@ const ShowPokemons = () =>{
           <PokedexCard id={pokemon._id} key={pokemon._id} pokemon={pokemon} image={pokemon.image} nom={pokemon.nom} numero={pokemon.numero}/>
         )
       })}
+      <button type="button" class="btn btn-secondary btn-sm bsize1 col-sm-2">Ajouter Pokemon</button>
     </>
   )
 }

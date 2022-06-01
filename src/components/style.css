@@ -23,14 +23,18 @@
 }
 .pokedetail .left{
     background-color:  #dc7633;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     display: inline;
     float: left;
     width: 600px;
     height: 700px;
+    margin-right: 3px;
 }
 .pokedetail .right{
-    border: 1px solid green;
+    background-color:  #5499c7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: inline;
     float: right;
 }
@@ -43,4 +47,18 @@
 .card_img img{
     height: 450px;
     width: 450px;
+}
+
+.table th{
+    color: #fff;
+}
+.table td{
+    color: #f4d03f;
+}
+
+.container button:focus{
+    box-shadow: none;
+}
+.container input:focus{
+    box-shadow: none;
 }

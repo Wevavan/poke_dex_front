@@ -29,9 +29,40 @@ const PokedexInfo = ({}) => {
 
 
             <div className='right col-sm'>
-                <div className='card_img'>
-                    <img className='border' src={pokemon.image} alt={pokemon.name}/>
-                </div>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Pokemon</th>
+                            <td></td>
+                            <td>{pokemon.nom}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Categorie</th>
+                            <td></td>
+                            <td>{pokemon.categorie}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Couleure</th>
+                            <td></td>
+                            <td>{pokemon.couleur}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Types</th>
+                            <td></td>
+                            <td>{pokemon.types}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Taille</th>
+                            <td></td>
+                            <td>{pokemon.taille}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Poids</th>
+                            <td></td>
+                            <td>{pokemon.poids}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
